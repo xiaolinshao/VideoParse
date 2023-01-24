@@ -16,7 +16,10 @@
             <button type="button" onclick="submit()">→</button>
         </div>
     </div>
-    <script>
+    <div  style="position:absolute;bottom: 30px;text-align:center;width: 95%;margin: 0 auto;">
+        <a onclick="alert('安装好油猴插件之后点击 确定\n请自行查询适配您浏览器的安装方法');window.location.href='./tampermonkey.user.js';">点此安装油猴脚本</a>
+    </div>
+     <script>
         document.onkeyup = function (e) {
             var event = e || window.event;
             var key = event.which || event.keyCode || event.charCode;

@@ -2,7 +2,7 @@
 // @name Whoami视频解析
 // @namespace    https://ljxnet.cn/
 // @version      4.1.4
-// @description    在各大视频网站的播放页面按Esc下方的~键即可跳过广告直接播放VIP视频，无任何页面上的修改
+// @description    在各大视频网站的播放页面按~键即可跳过广告直接播放VIP视频，无任何页面上的修改
 // @author       ljxi
 // @icon         https://jx.ljxnet.cn/favicon.ico
 // @match        *://*.iqiyi.com/*
