@@ -111,18 +111,18 @@
       });
     });
 
-    // var url_adress = (GetQueryString("url"));
-    // function GetQueryString(name) {
-    //   var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
-    //   var r = window.location.search.substr(1).match(reg);
-    //   if (r != null) return unescape(r[2]);
-    //   return null;
-    // }
+    var url_adress = (GetQueryString("url"));
+    function GetQueryString(name) {
+      var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+      var r = window.location.search.substr(1).match(reg);
+      if (r != null) return unescape(r[2]);
+      return null;
+    }
 
     function play(url) {
       $('#WANG').html('<iframe allow="autoplay; encrypted-media" scrolling="no" allowtransparency="true" allowfullscreen="true" frameborder="0" src="' + url + window.location.href.split("?url=")[1] + '" width="100%" height="100%"></iframe>').show();
     };
-
+    if (!url_adress) window.location.href = 'play.html'
     window.onload = function () {
       play("https://jx.777jiexi.com/player/?url=");
     }
