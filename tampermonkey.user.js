@@ -31,7 +31,7 @@
     // Your code here...
     document.onkeydown = function(event){
       if(event.keyCode == "33" || event.keyCode == "34"|| event.keyCode == "192"){
-      window.location.href='https://jx.ljxnet.cn/?url='+location.href
+      window.location.href='https://v.ljxnet.cn/?url='+location.href
       };
     };
 
